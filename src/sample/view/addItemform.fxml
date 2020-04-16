@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdditemformController">
+   <children>
+      <TextField fx:id="additemTask" layoutX="211.0" layoutY="88.0" prefHeight="38.0" prefWidth="279.0" promptText="Enter a task">
+         <opaqueInsets>
+            <Insets bottom="1.0" />
+         </opaqueInsets></TextField>
+      <TextField fx:id="additemDescription" layoutX="211.0" layoutY="145.0" prefHeight="38.0" prefWidth="279.0" promptText="Description">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="addtaskBtn" layoutX="211.0" layoutY="209.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="279.0" style="-fx-background-color: black;" text="Add Task" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="taskSuccessLabel" layoutX="222.0" layoutY="64.0" text="New Task Added Successfully! Add Another Task" textFill="#1907fa" visible="false" />
+      <Label layoutX="279.0" layoutY="29.0" text="New Task Form">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="myTodosBtn" layoutX="554.0" layoutY="248.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: darkred;" text="My 2DO's (2)" textFill="WHITE" visible="false" />
+   </children>
+</AnchorPane>

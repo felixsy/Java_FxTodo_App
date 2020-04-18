@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cellAnchorPane" prefHeight="80.0" prefWidth="384.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="74.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/todos.png" />
+         </image></ImageView>
+      <Label fx:id="cellTask" layoutX="79.0" layoutY="7.0" prefHeight="20.0" prefWidth="281.0" text="Task">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cellDescription" layoutX="79.0" layoutY="26.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: white; -fx-padding: 5;" text="Description" />
+      <Label fx:id="cellDateCreated" layoutX="199.0" layoutY="62.0" prefHeight="17.0" prefWidth="170.0" text="dateCreated" textFill="#f20909" />
+      <ImageView fx:id="cellDeleteButton" fitHeight="20.0" fitWidth="27.0" layoutX="359.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/delete.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

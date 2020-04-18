@@ -4,6 +4,7 @@ import sample.controller.LoginController;
 import sample.model.Task;
 import sample.model.User;
 
+import java.net.UnknownServiceException;
 import java.sql.*;
 
 
@@ -114,6 +115,24 @@ public class DatabaseHandler extends Configs{
         }
 
         return count;
+    }
+
+
+    public ResultSet getTaskbyUser(int userID){
+        ResultSet usertasks = null;
+
+        String query = "SELECT * FROM " + Const.TASK_TABLE + " WHERE " + Const.USERS_ID + " = ?";
+
+        try {
+            PreparedStatement preparedStatement = getDbConnection().prepareStatement(query);
+            preparedStatement.setInt(1, userID);
+            usertasks = preparedStatement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return usertasks;
     }
 
 

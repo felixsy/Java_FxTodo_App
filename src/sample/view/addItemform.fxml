@@ -7,26 +7,43 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane focusTraversable="true" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdditemformController">
+<AnchorPane fx:id="addItemAnchor" focusTraversable="true" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdditemformController">
    <children>
-      <TextField fx:id="additemTask" layoutX="211.0" layoutY="88.0" prefHeight="38.0" prefWidth="279.0" promptText="Enter a task">
+      <TextField fx:id="additemTask" layoutX="211.0" layoutY="186.0" prefHeight="38.0" prefWidth="279.0" promptText="Enter a task">
          <opaqueInsets>
             <Insets bottom="1.0" />
          </opaqueInsets></TextField>
-      <TextField fx:id="additemDescription" layoutX="211.0" layoutY="145.0" prefHeight="38.0" prefWidth="279.0" promptText="Description">
+      <TextField fx:id="additemDescription" layoutX="211.0" layoutY="243.0" prefHeight="38.0" prefWidth="279.0" promptText="Description">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <Button fx:id="addtaskBtn" layoutX="211.0" layoutY="209.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="279.0" style="-fx-background-color: black;" text="Add Task" textFill="#fffbfb">
+      <Button fx:id="addtaskBtn" layoutX="211.0" layoutY="307.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="279.0" style="-fx-background-color: black;" text="Add Task" textFill="#fffbfb">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Label fx:id="taskSuccessLabel" layoutX="222.0" layoutY="64.0" text="New Task Added Successfully! Add Another Task" textFill="#1907fa" visible="false" />
-      <Label layoutX="279.0" layoutY="29.0" text="New Task Form">
+      <Label fx:id="taskSuccessLabel" layoutX="201.0" layoutY="102.0" text="New Task Added Successfully! Add Another Task" textFill="#1907fa" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="289.0" layoutY="137.0" text="New Task Form">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="myTodosBtn" layoutX="554.0" layoutY="248.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: darkred;" text="My 2DO's (2)" textFill="WHITE" visible="false" />
+      <Button fx:id="myTodosBtn" layoutX="535.0" layoutY="307.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: darkred;" text="My 2DO's (2)" textFill="WHITE" visible="false" />
+      <AnchorPane prefHeight="69.0" prefWidth="700.0" style="-fx-background-color: red;">
+         <children>
+            <Label layoutX="289.0" layoutY="7.0" prefHeight="38.0" prefWidth="123.0" text="Todos" textFill="#fcf5f5">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="failureLabel" layoutX="240.0" layoutY="91.0" prefHeight="17.0" prefWidth="221.0" style="-fx-alignment: center;" text="You Can not add empty task !" textFill="#f50505" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

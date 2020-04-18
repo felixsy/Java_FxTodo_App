@@ -124,7 +124,7 @@ public class SignupController {
 
         }else{
             signupSuccessLabel.setVisible(true);
-            signupSuccessLabel.setText("Signup Incomplete! Fill All Field");
+            signupSuccessLabel.setText("Signup incomplete! fill all fields or Login");
             signupSuccessLabel.setTextFill(Paint.valueOf("red"));
             signupLoginBtn.setVisible(true);
         }
